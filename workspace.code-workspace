@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Users\\user\\Desktop\\templatemo_515_eatery\\css"
+		},
+		{
+			"path": "..\\..\\..\\Users\\user\\Desktop\\templatemo_515_eatery\\fonts"
+		},
+		{
+			"path": "..\\..\\..\\Users\\user\\Desktop\\templatemo_515_eatery\\images"
+		},
+		{
+			"path": "..\\..\\..\\Users\\user\\Desktop\\templatemo_515_eatery\\js"
+		},
+		{
+			"path": "..\\..\\..\\Users\\user\\Desktop\\templatemo_515_eatery\\php"
+		},
+		{
+			"path": "..\\..\\..\\Users\\user\\Desktop\\corano-package\\html\\assets\\css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css"
+	}
+}

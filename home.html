@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-Covid-19 Information Center</title>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <div class="preloader"></div>
+
+    <div class="main-wrapper">
+        <!-- header wrapper -->
+        <div class="header-wrapper scroll-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="navigation">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <a class="navbar-brand logo-white" href="home.html"><img src="./images/logo-white.png"
+                                        alt="logo" class="img-fluid"></a>
+                                <a class="navbar-brand" href="home.html"><img src="./images/logo.png" alt="logo"
+                                        class="img-fluid"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="home.html">Αρχική</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="./prevention.html">Πρόληψη</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="./hand-wash.html">Πλύσιμο Χεριών</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="./social-distance.html">Αποστασιοποίηση</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="signin-btn">
+                                    <a class="btn btn-primary d-none d-lg-block" href="./tracker.html">Στατιστικά</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="slider-wrapper">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8 text-center mb-5">
+                        <div class="hero-content">
+                            <h1 class="text-white has-animation" data-delay="0"> Μείνετε Σπίτι, Συμβάλετε στην
+                                προσπάθεια να μειωθούν τα θύματα.</h1>
+                            <h4 class="has-animation" data-delay="50">Αυτή η παναδημία μπορεί να μοιάζει ανίκητη αλλά
+                                δεν είναι!</h4>
+                            <a href="prevention.html" class="btn btn-primary btn-lg mt-3 bg-white has-animation"
+                                data-delay="100">Προστατευτείτε</a>
+                            <a href="tracker.html" class="btn btn-primary btn-lg mt-3 bg-tran ml-3 has-animation"
+                                data-delay="150">Στατιστικά</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-10 text-center mt-5">
+                        <div class="stat-slide">
+                            <div class="country-stat owl-carousel owl-theme" id="CountryDataOwl">
+                                <div class="owl-items p-2">
+                                    <div class="row" data-country-code="GR">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 text-left">
+                                            <img src="https://disease.sh/assets/img/flags/gr.png" alt="flag">
+                                            <h2>Ελλάδα</h2>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 d-none d-xl-block">
+                                            <h3>Συνολικές Περιπτώσεις <span class="dz-updated-date">Ενημερώθηκε πριν 3
+                                                    λεπτά</span></h3>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6">
+                                            <i class="ti-stats-up text-danger"></i>
+                                            <b class="text-danger ml-1 dz-confirmed">0</b>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <ul class="profile-detail list-inline">
+                                                <li class="list-inline-item text-left">
+                                                    <h6 class="mb-0">Active</h6>
+                                                    <small class="text-warning mb-0 dz-active">0</small>
+                                                    <b class="dz-today-active">+0</b>
+                                                </li>
+                                                <li class="list-inline-item text-left">
+                                                    <h6 class="mb-0">Recovered </h6>
+                                                    <small class="text-success mb-0 dz-recovered">0</small>
+                                                </li>
+                                                <li class="list-inline-item text-left">
+                                                    <h6 class="mb-0">Deaths</h6>
+                                                    <small class="text-primary mb-0 dz-death">0</small>
+                                                    <b class="dz-today-deaths">+0</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="owl-items p-2">
+                                    <div class="row" data-country-code="CY">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 text-left">
+                                            <img src="https://disease.sh/assets/img/flags/cy.png" alt="flag">
+                                            <h2>Κύπρος</h2>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 d-none d-xl-block">
+                                            <h3>Συνολικές Περιπτώσεις <span class="dz-updated-date">Ενημερώθηκε πριν 3
+                                                    λεπτά</span></h3>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6">
+                                            <i class="ti-stats-up text-danger"></i>
+                                            <b class="text-danger ml-1 dz-confirmed">0</b>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <ul class="profile-detail list-inline">
+                                                <li class="list-inline-item text-left">
+                                                    <h6 class="mb-0">Active</h6>
+                                                    <small class="text-warning mb-0 dz-active">0</small>
+                                                    <b class="dz-today-active">+0</b>
+                                                </li>
+                                                <li class="list-inline-item text-left">
+                                                    <h6 class="mb-0">Recovered </h6>
+                                                    <small class="text-success mb-0 dz-recovered">0</small>
+                                                </li>
+                                                <li class="list-inline-item text-left">
+                                                    <h6 class="mb-0">Deaths</h6>
+                                                    <small class="text-primary mb-0 dz-death">0</small>
+                                                    <b class="dz-today-deaths">+0</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="symptom-wrapper padding-v100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="section-title text-center">
+                            <h5 class="has-animation" data-delay="0">Συμπτώματα</h5>
+                            <h2 class="has-animation" data-delay="50">Τα βασικά συμπτώματα του Covid-19</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="symptom owl-carousel owl-theme">
+                        <div class="owl-items">
+                            <div class="symptom-content has-animation" data-delay="0">
+                                <span><img src="./images/fever.svg" alt=""></span>
+                                <h4 class="mb-3">Πυρετός</h4>
+                                <p> Ο πυρετός (επίσης γνωστός ως πυρεξία ή εμπύρετη απόκριση) είναι ένα από τα πιο
+                                    συνηθισμένα ιατρικά συμπτώματα και χαρακτηρίζεται από την αύξηση της θερμοκρασίας
+                                    του σώματος πάνω από το φυσιολογικό εύρος των 36,5-36,7 °C (97,7–99,5 °F), εξαιτίας
+                                    της ανόδου του σημείου ρύθμισης της θερμοκρασίας. Αυτή η αύξηση του σημείου ρύθμισης
+                                    προκαλεί την αύξηση του μυικού τόνου και ρίγη.</p>
+                            </div>
+                        </div>
+                        <div class="owl-items">
+                            <div class="symptom-content has-animation" data-delay="50">
+                                <span><img src="./images/cough.svg" alt=""></span>
+                                <h4 class="mb-3">Βήχας</h4>
+                                <p>Συνεχόμενα επεισόδια βήχα μέσα στην μέρα. Συνήθως πιο ισχυρά από οτι συνήθως.</p>
+                            </div>
+                        </div>
+                        <div class="owl-items">
+                            <div class="symptom-content has-animation" data-delay="100">
+                                <span><img src="./images/breathing.svg" alt=""></span>
+                                <h4 class="mb-3">Αναπνευστικά</h4>
+                                <p>Η δύσπνια και γενικά η δυσκολία στην αναπνοή είναι ένα από τα πιο σοβαρά συμπτώματα
+                                    του ιού.</p>
+                            </div>
+                        </div>
+                        <div class="owl-items">
+                            <div class="symptom-content has-animation" data-delay="150">
+                                <span><img src="./images/banner-right.png" alt=""></span>
+                                <h4 class="mb-3">Πόνος</h4>
+                                <p>Συνήθως συνοδεύεται από τον πυρετό, μιας και είναι γνωστό οτι ο πυρετός προκαλεί
+                                    ρίγη.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spread-wrapper padding-100 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section-title text-center">
+                        <h5 class="has-animation" data-delay="0">Προστατευθείτε</h5>
+                        <h2 class="has-animation" data-delay="50">Οι καλύτεροι τρόποι για να προστατευθείτε.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mt-5 mb-3">
+                    <div class="spread-div has-animation" data-delay="0">
+                        <div class="spread-image">
+                            <div class='r-hex'>
+                                <div class='r-hex-inner'></div>
+                            </div>
+                            <img src="images/icon2.png" alt="">
+                        </div>
+                        <div class="spread-content">
+                            <h4 class="mb-3">Προσωπικη Επαφή</h4>
+                            <p>Αποφύγετε να έρχεστε σε κοντινή επαφή με τρίτους, τους κλειστούς χώρους και τα μέσα
+                                μαζικής μεταφοράς.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-5 mb-3">
+                    <div class="spread-div has-animation" data-delay="50">
+                        <div class="spread-image">
+                            <div class='r-hex'>
+                                <div class='r-hex-inner'></div>
+                            </div>
+                            <img src="images/icon4.png" alt="">
+                        </div>
+                        <div class="spread-content">
+                            <h4 class="mb-3">Πλένετε καλά τα χέρια σας</h4>
+                            <p>Πλένετε καλά τα χέρια σας όσο πιο συχνά μπορείτε και χρεισιμοποιήτε αντισηπτικό.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-5">
+                    <div class="spread-div has-animation" data-delay="100">
+                        <div class="spread-image">
+                            <div class='r-hex'>
+                                <div class='r-hex-inner'></div>
+                            </div>
+                            <img src="images/icon5.png" alt="">
+                        </div>
+                        <div class="spread-content">
+                            <h4 class="mb-3">Καραντίνα</h4>
+                            <p>Προσπαθείστε να μένετε σπίτι σας όσο το δυνατόν περισσότερο γίνετε. Αν κάτι μπορείτε να
+                                το κάνετε και από την ασφάλεια του σπιτιού σας να το κάνετε.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-5 mb-3">
+                    <div class="spread-div has-animation" data-delay="150">
+                        <div class="spread-image">
+                            <div class='r-hex'>
+                                <div class='r-hex-inner'></div>
+                            </div>
+                            <img src="images/breathing.svg" alt="">
+                        </div>
+                        <div class="spread-content">
+                            <h4 class="mb-3">Ατομική Υγιεινή</h4>
+                            <p>Προσπαθήστε να καλύβετε τη μύτη και το στόμα σας με χαρτομάντιλο ή με τον αγκώνα σας
+                                όποτε θέλετε να φτερνιστείτε.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 mt-5">
+                    <div class="spread-div has-animation" data-delay="200">
+                        <div class="spread-image">
+                            <div class='r-hex'>
+                                <div class='r-hex-inner'></div>
+                            </div>
+
+                            <img src="images/icon6.png" alt="">
+                        </div>
+                        <div class="spread-content">
+                            <h4 class="mb-3">Καθαριότητα και Απολύμανση</h4>
+                            <p>Να καθαρίζετε και να απολυμένετε τακτικά τον εαυτό σας αλλά και τα προσωπικά σας
+                                αντικείμενα.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-5 mb-3">
+                    <div class="spread-div has-animation" data-delay="250">
+                        <div class="spread-image">
+                            <div class='r-hex'>
+                                <div class='r-hex-inner'></div>
+                            </div>
+                            <img src="images/banner-right.png" alt="">
+                        </div>
+                        <div class="spread-content">
+                            <h4 class="mb-3">Μάσκα</h4>
+                            <p>Να φοράτε πάντα μάσκα σε κλειστόυς χώρους καθώς και όταν έρχεστε σε επαφή με κάποιον.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="symptom-wrapper padding-v100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section-title text-center">
+                        <h5 class="has-animation" data-delay="0">Εξάπλωση </h5>
+                        <h2 class="has-animation" data-delay="50">Ο ιός εξαπλώνεται από άνθρωπο σε άνθρωπο</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="0">
+                    <div class="prevent-image">
+                        <img src="images/p-1.jpg" alt="image">
+                    </div>
+                    <div class="prevent-content">
+                        <h4 class="mb-4">Φωράτε Μάσκα</h4>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="50">
+                    <div class="prevent-image">
+                        <img src="images/p-2.jpg" alt="image">
+                    </div>
+                    <div class="prevent-content">
+                        <h4 class="mb-4">Πλένετε Χέρια</h4>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="100">
+                    <div class="prevent-image">
+                        <img src="images/p-3.jpg" alt="image">
+                    </div>
+                    <div class="prevent-content">
+                        <h4 class="mb-4">Κρατάτε Αποστάσεις</h4>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="150">
+                    <div class="prevent-image">
+                        <img src="images/p-4.jpg" alt="image">
+                    </div>
+                    <div class="prevent-content">
+                        <h4 class="mb-4">Σέλφ Τεστ</h4>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="200">
+                    <div class="prevent-image">
+                        <img src="images/p-5.jpg" alt="image">
+                    </div>
+                    <div class="prevent-content">
+                        <h4 class="mb-4">Μιλήστε με Ειδικούς</h4>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 has-animation" data-delay="250">
+                    <div class="prevent-image">
+                        <img src="images/p-6.jpg" alt="image">
+                    </div>
+                    <div class="prevent-content">
+                        <h4 class="mb-4">Καραντίνα</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-wrapper padding-v100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section-title text-center">
+                        <h5 class="text-white has-animation" data-delay="0">Faqs</h5>
+                        <h2 class="text-white has-animation" data-delay="50">Συχνές Ερωτήσεις</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 has-animation" data-delay="0">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        01. Πως εξαπλώνεται ο COVID-19;
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse in collapse show" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p>Μελέτες έχουν δείξει οτι εξαπλώνεται από άνθρωπο σε άνθρωπο που έρχονται σε
+                                        κοντινή επαφή (περίπου 2 μέτρα είναι η υποχρεωτική απόσταση). Ο ιός μεταδίδεται
+                                        συνήθως απο τα σταγονίδια που εκπέμπονται από το στόμα μας.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2. Ποιά είναι τα συμπτώματα του COVID-19;
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse in collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>Πιο συχνά συμπτώματα:</p>
+                                    <ul style="color: white;">
+                                        <li>-πυρετός</li>
+                                        <li>-ξηρός βήχας</li>
+                                        <li>-κούραση</li>
+                                    </ul>
+                                    <p>Πιο σπάνια συμπτώματα:</p>
+                                    <ul style="color: white;">
+                                        <li>-πόνοι</li>
+                                        <li>-πονόλαιμος</li>
+                                        <li>-διάρροια</li>
+                                        <li>-επιπεφυκίτιδα</li>
+                                        <li>-πονοκέφαλος</li>
+                                        <li>-απώλεια γεύσης ή όσφρησης</li>
+                                        <li>-δερματικό εξάνθημα ή αποχρωματισμός στα δάχτυλα των χεριών ή των ποδιών
+                                        </li>
+                                    </ul>
+                                    <p>Σοβαρά συμπτώματα:</p>
+                                    <ul style="color: white;">
+                                        <li>-δυσκολία στην αναπνοή ή δύσπνοια</li>
+                                        <li>-πόνος ή πίεση στο στήθος</li>
+                                        <li>-απώλεια ομιλίας ή κίνησης</li>
+                                    </ul>
+                                    <p>Αν έχετε σοβαρά συμπτώματα, ζητήστε άμεση ιατρική βοήθεια. Καλέστε από πριν
+                                        προτού επισκεφτείτε τον ιατρό σας ή κάποιον χώρο παροχής υπηρεσιών υγείας.
+                                        Άτομα με ήπια συμπτώματα που κατά τ' άλλα είναι υγιή θα πρέπει να διαχειριστούν
+                                        τα συμπτώματά τους στο σπίτι.
+                                        Κατά μέσο όρο, χρειάζονται 5-6 ημέρες από τη στιγμή που κάποιος θα μολυνθεί με
+                                        τον ιό μέχρι να εμφανίσει τα συμπτώματα, ωστόσο μπορεί να χρειαστούν έως και 14
+                                        ημέρες.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        3. Γιατί πρέπει να φοράω μάσκα;
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse in collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>Με τη χρήση μάσκας μειώνεται η εξάπλωση των σωματιδίων μέσω του αέρα που μπορεί
+                                        να περιέχουν τον ιό. Έτσι, φορώντας μια μάσκα σε συνδυασμό με την τήρηση των
+                                        απαραίτητων αποστάσεων και το προσεκτικό πλύσιμο των χεριών, μπορείτε να
+                                        προστατεύσετε τους υπόλοιπους γύρω σας.
+
+                                        Μην ξεχνατε! Πολλοι άνθρωποι που νόσησαν με Covid-19 δεν είχαν ποτέ συμπτώματα.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 has-animation" data-delay="50">
+                    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion1"
+                                        href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        04. Τι πρέπει να κάνω για να απομονωθώ άμα εχω συμπτώματα;
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse in collapse" role="tabpanel"
+                                aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>• Μείνετε στο σπίτι! Μη βγαίνετε από το σπίτι παρά μόνο για να κάνετε εξέταση για
+                                        COVID-19 και για άλλη αναγκαία ιατρική φροντίδα ή για να καλύψετε βασικές
+                                        ανάγκες, όπως η αγορά τροφίμων, εάν δεν μπορεί να
+                                        τα αγοράσει κάποιος άλλος για λογαριασμό
+                                        σας. Μην πηγαίνετε στη δουλειά, ακόμα και
+                                        αν εργάζεστε σε νευραλγικούς τομείς.</p><br>
+
+                                    <p>• Συμβουλευτείτε τον πάροχο υγειονομικής
+                                        περίθαλψής σας! Χρησιμοποιήστε το τηλέφωνο
+                                        ή την τηλεϊατρική, όταν είναι εφικτό.</p> <br>
+
+                                    <p> • Κάντε εξετάσεις! Εάν ο πάροχός σας δεν
+                                        παρέχει εξετάσεις, επισκεφτείτε τη σελίδα
+                                        nyc.gov/covidtest ή τηλεφωνήστε στο 311
+                                        για να βρείτε κάποιο κέντρο εξέτασης κοντά σας.
+                                        Πολλά κέντρα προσφέρουν δωρεάν εξέταση.</p><br>
+
+                                    <p>• Τηλεφωνήστε στο 911 σε έκτακτη ανάγκη!
+                                        Εάν έχετε δυσκολία στην αναπνοή, πόνο ή πίεση
+                                        στο στήθος, εάν νιώθετε σύγχυση ή δεν μπορείτε
+                                        να μείνετε ξύπνιοι, εάν έχετε μελάνιασμα στα χείλια
+                                        ή στο πρόσωπο, ή αντιμετωπίζετε οποιαδήποτε
+                                        άλλη κατάσταση έκτακτης ανάγκης, πάτε στο
+                                        νοσοκομείο ή τηλεφωνήστε στο 911 αμέσως.</p><br>
+
+                                    <p> • Εάν πρέπει να βγείτε από το σπίτι σας:
+                                        Αποφεύγετε τα μέρη με συνωστισμό.
+                                        Διατηρείτε απόσταση τουλάχιστον
+                                        6 ποδών (2 μέτρων) από τους άλλους.
+                                        Φοράτε κάλυμμα προσώπου.
+                                        Πλένετε τα χέρια σας πριν βγείτε έξω και χρησιμοποιείτε
+                                        αντισηπτικό χεριών με βάση την αλκοόλη (οινόπνευμα)
+                                        όσο είστε εκτός σπιτιού. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1"
+                                        href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        05. Μπορούν τα βρέφη και τα μικρά παιδιά να κολλήσουν COVID-19;
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse in collapse" role="tabpanel"
+                                aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>Τα παιδιά και οι νέοι έχουν περίπου 40% λιγότερες πιθανότητες να μολυνθούν από
+                                        τον κορωνοϊό σε σχέση με τους ενήλικες που εκτίθενται σε αυτόν, σύμφωνα με νέα
+                                        μελέτη παγκόσμιων δεδομένων μετάδοσης της COVID-19, της οποίας ηγήθηκαν
+                                        ερευνητές του Πανεπιστημιακού Κολεγίου του Λονδίνου (UCL).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1"
+                                        href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        06. Είναι ασφαλή τα εμβόλια κατά του COVID-19;
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse in collapse show" role="tabpanel"
+                                aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <p>Η ασφάλεια είναι θεμελιώδες προαπαιτούμενο για την είσοδο κάθε εμβολίου στην
+                                        αγορά της ΕΕ. Προτού διατεθεί για αγορά και χρήση, κάθε υποψήφιο εμβόλιο κατά
+                                        της COVID-19 πρέπει να πληροί τις αυστηρές απαιτήσεις και τα κατώτατα όρια της
+                                        επιστημονικής αξιολόγησης του Ευρωπαϊκού Οργανισμού Φαρμάκων για να λάβει άδεια
+                                        κυκλοφορίας. Οι απαιτήσεις αυτές δεν διαφέρουν από εκείνες που ισχύουν για κάθε
+                                        άλλο εμβόλιο που παράγεται και χρησιμοποιείται στην ΕΕ. Ο Ευρωπαϊκός Οργανισμός
+                                        Φαρμάκων (EMA) παρακολουθεί συνεχώς τις αναφορές για τυχόν ανεπιθύμητες
+                                        παρενέργειες μετά τη χρήση ενός εμβολίου και δημοσιεύει τακτικές
+                                        επικαιροποιήσεις σχετικά με την ασφάλεια.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="symptom-wrapper padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section-title text-center">
+                        <h5 class="has-animation" data-delay="0">Wash</h5>
+                        <h2 class="has-animation" data-delay="50">Wash Your Hangs min 20 Second</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 text-center">
+                    <img src="images/wash.png" alt="wash" style="width: 100%;" class="has-animation" data-delay="50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer-wrapper padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-8">
+                    <div class="bottom-logo">
+                        <img class="pb-3" src="" alt="">
+                        <ul class="social-share list-inline mb-4">
+                            <li class="list-inline-item"><a href="javascript:void(0);"><i
+                                        class="text-white ti-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0);"><i
+                                        class="text-white ti-twitter-alt"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0);"><i
+                                        class="text-white ti-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0);"><i
+                                        class="text-white ti-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="bottom-widget">
+                        <h4 class="widget-title">Γρήγορα Links</h4>
+                        <ul>
+                            <li><a href="prevention.html">Prevention</a></li>
+                            <li><a href="qurantine.html">Qurantine</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="help.html">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="bottom-widget">
+                        <h4 class="widget-title">About</h4>
+                        <ul>
+                            <li><a href="hand-wash.html">Hand Wash</a></li>
+                            <li><a href="social-distance.html">Social Distance</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="lower-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="copyright">
+                        <p>© Copyright 2021. All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="copyright float-right">
+                        <p>Design by <a href="https://dexignzone.com/" target="_blank">Dimitris Nektarios Karykis</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <script src="js/plugin.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
